@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel = "stylesheet"  href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header_menu">
+            <img class="Oracle__logo" src="./imagenes/OracleLogo.jpeg">
+            <img class="Alura__logo" src="./imagenes/logo_alura.jpeg">
+        </nav>
+    </header>
+
+    <main>
+        <section class="principal">
+            <div class="Encriptador">
+                <h1 class="titulo">Ingrese un texto aqui</h1>
+                <textarea id="textoACaptar"  class="entrada__texto" placeholder="Esperando texto para encriptar/desenciptar"></textarea>
+                <p class="condicion">Solo se permiten letras minusculas y sin acentos!!!!</p>
+                <div class="botones">
+                    <a onclick="captarTextoParaEncriptar()"   class="boton__encriptar">Encriptar</a>
+                    <a onclick="captarTextoParaDesencriptar()"class="boton__desencriptar">Desencriptar</a>
+                </div>
+            </div>
+
+            <div class="texto__encriptado">
+                <p class="aviso__desencriptador">Ningun mensaje fue encontrado</p>
+                <textarea readonly  id="resultado" class="texto__encriptado__mensaje" ></textarea>
+                <img class="imagen__robot" src="./imagenes/robot.png" >
+                <a onclick="copiarTexto()" class="boton__copiar">Copiar</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">Desarrollado por Ivan Pastrana
+        <a href="https://www.instagram.com/ivan.lizarraga26/?hl=es-es"  class="footer__link">Instagram</a>
+        <a href="https://github.com/ivan26pastrana" class="footer__link">github</a>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
